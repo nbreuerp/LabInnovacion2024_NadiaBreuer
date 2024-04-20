@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: black;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -3380,7 +3380,8 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		/*background-image: url("../../images/banner.jpg");*/
+		background-color: #00FFA6;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3410,7 +3411,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #00FFA6;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3424,6 +3425,7 @@ input, select, textarea {
 
 		#banner h1 {
 			font-size: 3.25em;
+			color:black
 		}
 
 		#banner > .inner {
@@ -3949,4 +3951,36 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+
+		#one1 .inner {
+			display: flex;
+			align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+			justify-content: space-between; /* Distribuye el espacio de manera que el texto y la imagen tengan un espacio intermedio */
+		}
+		
+		#one1 .content {
+			display: flex;
+			align-items: center; /* Centra verticalmente el contenido */
+			justify-content: space-around; /* Distribuye el contenido uniformemente */
+		}
+		
+		#one1 .text {
+			flex: 1; /* Toma el espacio necesario */
+			padding-right: 20px; /* Espacio entre el texto y la imagen */
+		}
+		
+		#one1 .image {
+			flex: 1; /* Toma el espacio necesario */
+			max-width: 500px; /* Ancho máximo para la imagen */
+			padding-left: 20px; /* Espacio entre el texto y la imagen */
+		}
+		
+		#one1 .image img {
+			width: 100%; /* Asegura que la imagen se adapte al contenedor */
+			height: auto; /* Mantiene la proporción de la imagen */
+		}
+
+		.small-text {
+			font-size: 16px; /* O el tamaño que prefieras */
 		}
